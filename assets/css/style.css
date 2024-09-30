@@ -1,0 +1,93 @@
+body{
+    display: block;
+    font-size: 18px;
+}
+.Title1 {
+    background-color: #ECC354;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+.text-justify{
+    text-align: justify!important;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+.col img{
+    padding: 4rem;
+    max-width: 125%;
+    height: auto;
+    margin-left: -100px;
+}
+::before{
+    box-sizing: border-box;
+} 
+.box{
+    background-color: #f4f4f4;
+    padding-right: 100px ;
+    padding: 3rem;
+}
+.DH .NTitle::before{
+    display: inline-block;
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    position:absolute;
+    font-weight: 900;
+    left: 0; 
+    top: -37px;
+    font-size: 20px;
+}
+.DH .NTitle a{
+    color: #000;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.w-100{
+    background-color: #284f9e;
+}
+.NganhLienthong li .NTitle::before{
+    display: inline-block;
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    position:absolute;
+    font-weight: 900;
+    left: 0; 
+    top: -37px;
+    font-size: 20px;
+    color: #f4f4f4;
+}
+.NganhLienthong .NTitle a{
+    color: #fff;
+}
+.Title ::before{
+    color: #1344a8;
+    margin-right: 0.25em;
+}
+/* 1200 / 1024 / 992 / 768 / 576 / 400 / 320  */
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        background-color: rgb(94 187 158);
+        max-width: max-content;
+        -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+}
