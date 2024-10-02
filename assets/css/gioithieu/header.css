@@ -1,0 +1,152 @@
+.header {
+    background-color: #284f9e;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left div {
+    margin-right: 20px;
+}
+
+.header-left ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-left ul li {
+    margin-right: 20px;
+}
+
+.header-left ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.header-left ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.header-left ul li a:hover::after {
+    width: 100%;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.header-right a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.header-right a:hover::after {
+    width: 100%;
+}
+
+.header-right .separator {
+    margin: 5px 5px;
+}
+
+.header-right .fa-search {
+    color: white;
+}
+
+.header-res {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+    .header-res {
+        display: contents;
+    }
+
+    .header-res .container {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: .5rem 1rem;
+    }
+
+    .header-res .container a img {
+        height: 60px;
+    }
+
+    .menu-button {
+        width: 40px;
+        height: 40px;
+        background-color: #284f9e;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        color: black;
+    }
+    
+    .menu li {
+        padding: 1rem;
+    }
+    
+    .menu li a {
+        color: black;
+        text-decoration: none;
+        display: block;
+    }
+}
