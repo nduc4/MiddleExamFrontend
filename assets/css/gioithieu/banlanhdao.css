@@ -26,3 +26,10 @@
     font-size: 18px;
     color: black;
 }
+@media (max-width: 768px) {
+    
+    .ban-lanh-dao .row {
+        align-items: center;
+        display: contents;
+    }
+}
