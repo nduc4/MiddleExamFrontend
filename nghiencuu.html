@@ -1,0 +1,526 @@
+<!DOCTYPE HTML>
+<html lang="vi">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="shortcut_icon" rel="shortcut icon" type="image/ico"
+        href="https://lhu.edu.vn/ViewPage/LHUVNB4/_assets/favicon.ico?v1.1.2">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/css_nghiencuu/nghiencuu.css">
+    <link rel="stylesheet" href="assets/css/css_nghiencuu/responsive-mobile.css"
+        media="only screen and (max-width: 767px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/01485da7a8.js" crossorigin="anonymous"></script>
+    <title>Nghiên cứu</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!-- Header Section -->
+    <div class="header">
+        <!-- Left side -->
+        <div class="container" style="display: flex; justify-content: right;">
+            <div class="header-left">
+                <div>
+                    Thông tin cho:
+                </div>
+                <ul>
+                    <li>
+                        <a href="http://sinhvientuonglai.lhu.edu.vn">Sinh viên tương lai</a>
+                    </li>
+                    <li>
+                        <a href="http://sinhviendanghoc.lhu.edu.vn">Sinh viên đang học</a>
+                    </li>
+                    <li>
+                        <a href="http://phuhuynh.lhu.edu.vn">Phụ huynh</a>
+                    </li>
+                    <li>
+                        <a href="https://me.lhu.edu.vn">Cán bộ & Giảng viên</a>
+                    </li>
+                    <li>
+                        <a href="http://cuusv.lhu.edu.vn">Cựu sinh viên</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right side -->
+            <div class="header-right">
+                <a href="http://en.lhu.edu.vn"><i class="fa-solid fa-earth-americas"></i> English</a>
+                <span class="separator">|</span>
+                <a href="https://me.lhu.edu.vn">Trang cá nhân</a>
+                <span class="separator">|</span>
+                <a href="https://lhu.edu.vn/search/?q="><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-res">
+        <div class="container">
+            <a href="https://lhu.edu.vn">
+                <img src="https://lhu.edu.vn/ViewPage/LHUVNB4/_default/image/Logo_LHU_Vi.png" alt="Đại học Lạc Hồng">
+            </a>
+            <div class="menu-button" id="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="chuongtrinhdaotao.html">Chương trình đào tạo</a></li>
+                <li><a href="tuyensinh.html">Tuyển sinh</a></li>
+                <li><a href="nghiencuu.html">Nghiên cứu</a></li>
+                <li><a href="https://lhu.edu.vn/103/Lien-he.html">Liên hệ</a></li>
+            </ul>
+            <div class="search">
+                <input type="Text" id="Search1"
+                    onkeydown="if(event.keyCode == 13) location='/search/?q=' + this.value;">
+                <span onclick="location='/search/?q=' + $('#Search1').val();" class="SearchImg"><i
+                        class="fa fa-search"></i></span>
+            </div>
+            <div class="menu-bot">
+                <div class="trang-ca-nhan">
+                    <a href="http://en.lhu.edu.vn"><i class="fa-solid fa-earth-americas"></i> English</a>
+                    <span class="separator" style="padding-left: 5px; padding-right: 5px">|</span>
+                    <a href="https://me.lhu.edu.vn">Trang cá nhân</a>
+                </div>
+                <ul class="thong-tin">
+                    <li>
+                        <a href="http://sinhvientuonglai.lhu.edu.vn">Sinh viên tương lai</a>
+                    </li>
+                    <li>
+                        <a href="http://sinhviendanghoc.lhu.edu.vn/">Sinh viên đang học</a>
+                    </li>
+                    <li>
+                        <a href="http://phuhuynh.lhu.edu.vn/">Phụ huynh</a>
+                    </li>
+                    <li>
+                        <a href="http://me.lhu.edu.vn/">Cán bộ & Giảng viên</a>
+                    </li>
+                    <li>
+                        <a href="http://me.lhu.edu.vn/">Cựu sinh viên</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Sub Header Section -->
+    <div id="sub-header">
+        <div class="container" style="display: flex; align-items: center;">
+            <a id="logo" href="https://lhu.edu.vn">
+                <img src="https://lhu.edu.vn/ViewPage/LHUVNB4/_default/image/Logo_yellow.png" alt="LHU Logo">
+            </a>
+            <div id="branding">
+                <a id="logo-text" href="https://lhu.edu.vn">
+                    <img src="https://lhu.edu.vn/ViewPage/LHUVNB4/_default/image/Text_logo.png" alt="LHU Text Logo">
+                </a>
+                <ul id="nav-menu">
+                    <li class="nav-item">
+                        <a href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chuongtrinhdaotao.html">Chương trình đào tạo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tuyensinh.html">Tuyển sinh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nghiencuu.html">Nghiên cứu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://lhu.edu.vn/103/Lien-he.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+    <div id="nghiencuuKH">
+        <ul>
+            <li>
+                <img src="assets/img/img_nghiencuu/NghiencuuKH.jpg" alt="Nghien cuu Khoa hoc">
+            </li>
+        </ul>
+    </div>
+
+    <!--*************** SU KIEN NOI BAT ***************-->
+    <div id="su-kien" class="container-fluid mb-5"> <!-- Sử dụng container-fluid để chiếm toàn bộ chiều rộng -->
+        <h3 id="hoat-dong" class="NewsCName text-center" style="color: rgb(40, 79, 158)">HOẠT ĐỘNG NỔI BẬT</h3>
+        <div class="row mx-0 "> <!-- Thêm mx-0 để bỏ margin -->
+            <!-- Phần bên trái -->
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <a
+                    href="https://lhu.edu.vn/590/46787/Truong-Dai-hoc-Lac-Hong-tham-du-Hoi-thao-Quoc-te-Toan-hoc-Mien-Trung-Tay-Nguyen-lan-thu-5-nam-2024.html">
+                    <img src="https://lhu.edu.vn/Data/News/590/images/image_20240830082247_1.jpeg" alt="Image"
+                        class="img-fluid mb-2" />
+                </a>
+                <div class='Detail_box text-center'>
+                    <div class="NTitle">
+                        <a
+                            href="https://lhu.edu.vn/590/46787/Truong-Dai-hoc-Lac-Hong-tham-du-Hoi-thao-Quoc-te-Toan-hoc-Mien-Trung-Tay-Nguyen-lan-thu-5-nam-2024.html">
+                            Trường Đại học Lạc Hồng tham dự Hội thảo Quốc tế “Toán học Miền Trung – Tây Nguyên lần thứ 5
+                            năm 2024”
+                        </a>
+                    </div>
+                    <div class="NIntro">
+                        <p>Vừa qua, TS. Trần Văn Hoan – Trưởng bộ môn Toán – Phòng Đào tạo, đã vinh dự đại diện Trường
+                            Đại học Lạc Hồng tham dự và hoàn thành báo cáo tại Hội thảo Quốc tế “Toán học Miền Trung –
+                            Tây
+                            Nguyên lần thứ 5 năm 2024”, được tổ chức tại Trường Đại học Khánh Hòa từ ngày 23 đến 25
+                            tháng 8.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phần bên phải -->
+            <div class="col-md-6 px-0"> <!-- Sử dụng px-0 để bỏ padding -->
+                <ul class='list-unstyled'>
+                    <li class='mb-3'>
+                        <div class='row mx-0'> <!-- Thêm mx-0 để bỏ margin -->
+                            <div class='col-md-6'>
+                                <a href="https://lhu.edu.vn/590/46678/LHU-tham-gia-Hoi-thao-VietTESOL-2024.html"
+                                    style="display: block; height: 197px; background-image:url('https://lhu.edu.vn/Data/News/590/images/z5728531898791_d503351eb152198f2a45ef3f27acb3d1.jpg'); background-size: cover;">
+                                </a>
+                            </div>
+                            <div class='col-md-6'>
+                                <div class="NTitle">
+                                    <a href="https://lhu.edu.vn/590/46678/LHU-tham-gia-Hoi-thao-VietTESOL-2024.html">LHU
+                                        tham gia Hội thảo VietTESOL 2024
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='mb-3'>
+                        <div class='row mx-0'>
+                            <div class='col-md-6'>
+                                <a href="https://lhu.edu.vn/590/46617/Dai-hoc-Lac-Hong-tham-du-hoi-thao-khoa-hoc-Tang-cuong-ky-nang-tu-duy-phan-bien-cho-sinh-vien-dai-hoc-nam-2024.html"
+                                    style="display: block; height: 197px; background-image:url('https://lhu.edu.vn//Data/News/590/images/image_20240806135219_4.jpeg'); background-size: cover;">
+                                </a>
+                            </div>
+                            <div class='col-md-6'>
+                                <div class="NTitle">
+                                    <a
+                                        href="https://lhu.edu.vn/590/46617/Dai-hoc-Lac-Hong-tham-du-hoi-thao-khoa-hoc-Tang-cuong-ky-nang-tu-duy-phan-bien-cho-sinh-vien-dai-hoc-nam-2024.html">
+                                        Đại học Lạc Hồng tham dự hội thảo khoa học "Tăng cường kỹ năng tư duy phản biện
+                                        cho sinh viên đại học" năm 2024
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='mb-3'>
+                        <div class='row mx-0'>
+                            <div class='col-md-6'>
+                                <a href="https://lhu.edu.vn/590/45664/TS-Nguyen-Dinh-Du-phat-huy-gia-tri-Dai-hoc-Lac-Hong-tai-Hoi-nghi-Co-hoc-toan-quoc-IMECH-45.html"
+                                    style="display: block; height: 197px; background-image:url('https://lhu.edu.vn//Data/News/590/images/2024/Hoi_thao_co_hoc_toan_quoc_45/Nguyen_Dinh_Du_1_1.jpg'); background-size: cover;">
+                                </a>
+                            </div>
+                            <div class='col-md-6'>
+                                <div class="NTitle">
+                                    <a
+                                        href="https://lhu.edu.vn/590/45664/TS-Nguyen-Dinh-Du-phat-huy-gia-tri-Dai-hoc-Lac-Hong-tai-Hoi-nghi-Co-hoc-toan-quoc-IMECH-45.html">TS.
+                                        Nguyễn Đình Dư phát huy giá trị Đại học Lạc Hồng tại Hội nghị Cơ học toàn quốc
+                                        IMECH 45
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--******** GIOI THIEU **********-->
+    <div id="Gioithieu">
+        <div class="NC">
+            <div class="gt-section">
+                <a href="https://nckh.lhu.edu.vn/" class="title">
+                    <h3>NGHIÊN CỨU KHOA HỌC</h3>
+                </a>
+
+                <p style="font-size: 16px;">Trường Đại học Lạc Hồng với mục tiêu là đào tạo đội ngũ kỹ sư, cử nhân, Sau
+                    đại học có trình
+                    độ, kỹ thuật cho các công ty, xí nghiệp để đáp ứng nhu cầu thị trường lao động của xã hội.
+                    Để thực hiện mục tiêu này, Trường đã xem nghiên cứu khoa học là sứ mạng của mình, đồng thời
+                    là nhiệm vụ của mỗi sinh viên và mỗi giảng viên.</p>
+
+                <a href="https://nckh.lhu.edu.vn/">
+                    <button class="btn-warning">Xem thêm</button>
+                </a>
+            </div>
+
+            <div class="image-gallery">
+                <div class="image-row">
+                    <img src="assets/img/img_nghiencuu/01.jpg" alt="Image 1" class="hinh-nckh">
+                    <img src="assets/img/img_nghiencuu/02.jpg" alt="Image 2" class="hinh-nckh">
+                </div>
+                <div class="image-row">
+                    <img src="assets/img/img_nghiencuu/03.jpg" alt="Image 3" class="hinh-nckh">
+                    <img src="assets/img/img_nghiencuu/04.jpg" alt="Image 4" class="hinh-nckh">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--******** TAP CHI **********-->
+    <div id="Tapchi">
+        <div class="NC">
+            <div class="image-gallery">
+                <div class="image-row">
+                    <img src="assets/img/img_nghiencuu/05.jpg" alt="Image 5" class="hinh-tapchi">
+                    <img src="assets/img/img_nghiencuu/06.jpg" alt="Image 6" class="hinh-tapchi">
+                </div>
+                <div class="image-row">
+                    <img src="assets/img/img_nghiencuu/07.jpg" alt="Image 7" class="hinh-tapchi">
+                    <img src="assets/img/img_nghiencuu/08.jpg" alt="Image 8" class="hinh-tapchi">
+                </div>
+            </div>
+
+            <div class="tc-section">
+                <a href="https://tapchikhoahoc.lhu.edu.vn/" class="title">
+                    <h3>TẠP CHÍ KHOA HỌC LẠC HỒNG</h3>
+                </a>
+                <p style="font-size: 16px; margin: 16px">Tạp chí Khoa học Đào tạo là phần công bố, giới thiệu các công
+                    trình nghiên
+                    cứu khoa học
+                    trong lĩnh vực giảng dạy và đào tạo; thông tin các kết quả nghiên cứu khoa học ở trong
+                    và ngoài nước nhằm phục vụ cho công tác đào tạo của nhà trường.
+                </p>
+                <ul class="CatMenu">
+                    <li><a href="https://lhu.edu.vn/370/Ky-thuat.html">Kỹ thuật</a></li>
+                    <li><a href="https://lhu.edu.vn/383/Kinh-te.html">Kinh tế</a></li>
+                    <li><a href="https://lhu.edu.vn/371/Xa-hoi.html">Xã hội</a></li>
+                    <li><a href="https://lhu.edu.vn/720/Thong-tin-lien-he.html">Thông tin liên hệ</a></li>
+                    <li><a href="https://lhu.edu.vn/129/Dinh-dang-bai-bao-khoa-hoc.html">Định dạng bài báo khoa học</a>
+                    </li>
+                    <li><a href="https://js.lhu.edu.vn/index.php/lachong" target="_blank">Gửi bài</a></li>
+                    <li><a href="https://lhu.edu.vn/136/Thong-tin-tham-khao.html">Thông tin tham khảo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--******** ROBOCON **********-->
+    <div ID="Robocon" style="background-color:#284F9E;">
+        <div class="container">
+            <a href="https://robocon.lhu.edu.vn/" style="color:#fff; text-decoration: none;">
+                <h3 id="Ro-bo-con" class="NewsCName" style="color:#fff;">ROBOCON</h3>
+            </a>
+            <div class="RB">
+
+                <p>Đến với sân chơi Robocon, người người đều nhắc đến tên của ngôi trường đã nhiều lần đại diện cho
+                    Việt Nam ghi danh trên đấu trường Quốc tế đó chính là Đại học Lạc Hồng. Đại học Lạc Hồng đã để
+                    lại trong tâm trí khán giả bao nhiêu lời khen ngợi và thán phục về tính năng ổn định, tốc độ
+                    thần tốc, tinh thần chiến đấu bình tĩnh, tự tin giành chiến thắng thuyết phục trước các đối thủ
+                    mà các đội tuyển Robocon của trường mang lại.
+                </p>
+                <p>Điển hình là đội tuyển Robocon của Trường Đại học Lạc Hồng đã 08 lần vô địch Robocon Việt Nam và
+                    02 lần đạt giải Ba, 03 lần đạt giải Nhì, 03 lần vô địch cuộc thi Robocon Châu Á - Thái Bình
+                    Dương.
+                </p>
+            </div>
+            <div id="rowRobocon" class="row">
+                <div class="col-md-12 col-lg-4">
+                    <ul class="CatMenu">
+                        <li>
+                            <ul class="CSub">
+                                <li><a href="/489/Guong-mat-Robocon.html">Gương mặt Robocon</a></li>
+                                <li><a href="/491/Cong-nghe-Robocon.html">Công nghệ Robocon</a></li>
+                                <li><a href="/187/Robocon.html">Robocon</a></li>
+                                <li><a href="/243/Robocon-Techshow.html">Robocon Techshow</a></li>
+                                <li><a href="/300/Y-tuong-Robocon.html">Ý tưởng Robocon</a></li>
+                                <li><a href="/490/Phim-Anh-Robocon.html">Phim Ảnh Robocon</a></li>
+                                <li><a href="/163/NCKH-Chuyen-giao-cong-nghe.html">NCKH & Chuyển giao công nghệ</a>
+                                </li>
+                                <li><a href="/488/Lich-su.html">Lịch sử</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="assets/img/img_nghiencuu/robocon.jpg" style="width:100%;height:auto;margin-top:20px;">
+                </div>
+                <div class="col-md-12 col-lg-8 d-lg-flex">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d0PEnCjLyNo"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            </br>
+        </div> <!-- End container-->
+        </br>
+    </div><!--End ID-->
+    <!--========== KẾT NỐI ==========-->
+    <!-- Footer -->
+    <div class="container pb-5">
+        <div class="ketnoi row">
+            <div class="col-lg-2 text-uppercase">Kết Nối</div>
+            <div class="col-lg-10 icon">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/lhuniversity"><i
+                                class="fa-brands fa-square-facebook fa-bounce " style="color: #406dba;"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@lhuniversity"><i
+                                class="fa-brands fa-youtube fa-bounce no-hover" style="color: red;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="Menukhoa row">
+            <li class="col-md col-sm-6">
+                <ul class="khoa1">
+                    <li>
+                        <a href="https://saudaihoc.lhu.edu.vn/">Khoa Sau đại học</a>
+                    </li>
+                    <li>
+                        <a href="https://duoc.lhu.edu.vn/">Khoa Dược</a>
+                    </li>
+                    <li>
+                        <a href="https://cs.lhu.edu.vn/">Khoa Công nghệ Thông tin</a>
+                    </li>
+                    <li>
+                        <a href="https://codien.lhu.edu.vn/">Khoa Cơ điện - Điện tử</a>
+                    </li>
+                    <li>
+                        <a href="https://kc.lhu.edu.vn/">Khoa Kỹ thuật Công trình</a>
+                    </li>
+                    <li>
+                        <a href="https://cee.lhu.edu.vn/">Khoa Khoa học và Công nghệ thực phẩm</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-md col-sm-6">
+                <ul class="khoa1">
+                    <li>
+                        <a href="https://qt.lhu.edu.vn/">Khoa Quản trị - Kinh tế Quốc tế</a>
+                    </li>
+                    <li>
+                        <a href="https://tckt.lhu.edu.vn/">Khoa Tài chính Kế toán</a>
+                    </li>
+                    <li>
+                        <a href="https://ed.lhu.edu.vn/">Khoa Ngôn ngữ Anh</a>
+                    </li>
+                    <li>
+                        <a href="https://dp.lhu.edu.vn/">Khoa Đông phương học</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-md col-sm-6">
+                <ul class="khoa1">
+                    <li>
+                        <a href="https://dangbo.lhu.edu.vn/">Đảng bộ</a>
+                    </li>
+                    <li>
+                        <a href="https://doanhoi.lhu.edu.vn/">Đoàn TN - Hội SV</a>
+                    </li>
+                    <li>
+                        <a href="https://congdoan.lhu.edu.vn/">Công đoàn cơ sở</a>
+                    </li>
+                    <li>
+                        <a href="https://dambaochatluong.lhu.edu.vn/">Đảm bảo chất lượng</a>
+                    </li>
+                    <li>
+                        <a href="https://hoptac.lhu.edu.vn/">Hợp tác đối ngoại</a>
+                    </li>
+                    <li>
+                        <a href="https://hdgscs.lhu.edu.vn/">Hội đồng giáo sư cơ sở</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-md col-sm-6">
+                <ul class="khoa1">
+                    <li>
+                        <a href="https://swpea2023.lhu.edu.vn/">Hội nghị SWPEA2023</a>
+                    </li>
+                    <li>
+                        <a href="https://25nam.lhu.edu.vn/">Kỷ yếu 25 năm thành lập</a>
+                    </li>
+                    <li>
+                        <a href="https://tainguyen.lhu.edu.vn/">Tài nguyên học tập</a>
+                    </li>
+                    <li>
+                        <a href="https://lhu.edu.vn/319/Tuyen-dung.html">Tuyển dụng</a>
+                    </li>
+                    <li>
+                        <a href="https://phongchongcovid19.lhu.edu.vn/">Phòng chống COVID-19</a>
+                    </li>
+                    <li>
+                        <a href="https://netdepsinhvienlachong2024.lhu.edu.vn/">Nét đẹp sinh viên 2024</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="row" style="background-color: #284F9E;">
+        <div class="container">
+            <div class="Footer row">
+                <div class="col-lg-2">
+                    <a href="https://lhu.edu.vn/40/Gioi-thieu.html">
+                        <img src="assets/img/Logo_white_Vi.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="col-md diachi" style="padding-top:70px;color:#fff;">
+                        <ul>
+                            <li>
+                                Địa chỉ: Số 10, Huỳnh Văn Nghệ, P. Bửu Long, Tp. Biên Hòa - Tỉnh Đồng Nai
+                            </li>
+                            <li>
+                                Điện thoại:
+                                <a href="https://lhu.edu.vn/24/tel:02513%20952%20778"
+                                    style="color:#fff;font-weight:300;">0251 3952 778</a>
+                            </li>
+                            <li>
+                                Email:
+                                <a href="mailto:lachong@lhu.edu.vn"
+                                    style="color:#fff;font-weight:300;">lachong@lhu.edu.vn</a>
+                            </li>
+                            <li>© 2023 Đại học Lạc Hồng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="col-md chitiet" style="color: #fff;">
+                        <i class="fa fa-folder-open"></i> 655,315
+                        <i class="fa fa-chart-column"></i> 1/792
+                        <div class="d-flex flex-column align-items-center justify-content-center logo-truong">
+                            <img src="assets/img/Me_80.png" alt="me">
+                            <div class="me-app">
+                                <a href="https://apps.apple.com/us/app/me-app/id1278107318?l=vi">
+                                    <img src="assets/img/download-on-the-app-store.svg" alt="gg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            if (menu.style.display === 'contents') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'contents';
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
