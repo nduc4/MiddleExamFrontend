@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển sinh</title>
+    <link rel="stylesheet" href="tuyensinh.css">
+    <link id="shortcut_icon" rel="shortcut icon" type="image/ico"
+        href="https://lhu.edu.vn/ViewPage/LHUVNB4/_assets/favicon.ico?v1.1.2">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/01485da7a8.js" crossorigin="anonymous"></script>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <!-- Left side -->
+        <div class="container" style="display: flex; justify-content: right;">
+            <div class="header-left">
+                <div>
+                    Thông tin cho:
+                </div>
+                <ul>
+                    <li>
+                        <a href="http://sinhvientuonglai.lhu.edu.vn">Sinh viên tương lai</a>
+                    </li>
+                    <li>
+                        <a href="http://sinhviendanghoc.lhu.edu.vn">Sinh viên đang học</a>
+                    </li>
+                    <li>
+                        <a href="http://phuhuynh.lhu.edu.vn">Phụ huynh</a>
+                    </li>
+                    <li>
+                        <a href="https://me.lhu.edu.vn">Cán bộ & Giảng viên</a>
+                    </li>
+                    <li>
+                        <a href="http://cuusv.lhu.edu.vn">Cựu sinh viên</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right side -->
+            <div class="header-right">
+                <a href="http://en.lhu.edu.vn"><i class="fa-solid fa-earth-americas"></i> English</a>
+                <span class="separator">|</span>
+                <a href="https://me.lhu.edu.vn">Trang cá nhân</a>
+                <span class="separator">|</span>
+                <a href="https://lhu.edu.vn/search/?q="><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-res">
+        <div class="container">
+            <a href="https://lhu.edu.vn">
+                <img src="https://lhu.edu.vn/ViewPage/LHUVNB4/_default/image/Logo_LHU_Vi.png" alt="Đại học Lạc Hồng">
+            </a>
+            <div class="menu-button" id="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="chuongtrinhdaotao.html">Chương trình đào tạo</a></li>
+                <li><a href="tuyensinh.html">Tuyển sinh</a></li>
+                <li><a href="nghiencuu.html">Nghiên cứu</a></li>
+                <li><a href="https://lhu.edu.vn/103/Lien-he.html">Liên hệ</a></li>
+            </ul>
+            <div class="search">
+                <input type="Text" id="Search1"
+                    onkeydown="if(event.keyCode == 13) location='/search/?q=' + this.value;">
+                <span onclick="location='/search/?q=' + $('#Search1').val();" class="SearchImg"><i
+                        class="fa fa-search"></i></span>
+            </div>
+            <div class="menu-bot">
+                <div class="trang-ca-nhan">
+                    <a href="http://en.lhu.edu.vn"><i class="fa-solid fa-earth-americas"></i> English</a>
+                    <span class="separator" style="padding-left: 5px; padding-right: 5px">|</span>
+                    <a href="https://me.lhu.edu.vn">Trang cá nhân</a>
+                </div>
+                <ul class="thong-tin">
+                    <li>
+                        <a href="http://sinhvientuonglai.lhu.edu.vn">Sinh viên tương lai</a>
+                    </li>
+                    <li>
+                        <a href="http://sinhviendanghoc.lhu.edu.vn/">Sinh viên đang học</a>
+                    </li>
+                    <li>
+                        <a href="http://phuhuynh.lhu.edu.vn/">Phụ huynh</a>
+                    </li>
+                    <li>
+                        <a href="http://me.lhu.edu.vn/">Cán bộ & Giảng viên</a>
+                    </li>
+                    <li>
+                        <a href="http://me.lhu.edu.vn/">Cựu sinh viên</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sub Header Section -->
+    <div id="sub-header">
+        <div class="container" style="display: flex; align-items: center;">
+            <a id="logo" href="https://lhu.edu.vn">
+                <img src="https://lhu.edu.vn/ViewPage/LHUVNB4/_default/image/Logo_yellow.png" alt="LHU Logo">
+            </a>
+            <div id="branding">
+                <a id="logo-text" href="https://lhu.edu.vn">
+                    <img src="https://lhu.edu.vn/ViewPage/LHUVNB4/_default/image/Text_logo.png" alt="LHU Text Logo">
+                </a>
+                <ul id="nav-menu">
+                    <li class="nav-item">
+                        <a href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chuongtrinhdaotao.html">Chương trình đào tạo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tuyensinh.html">Tuyển sinh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nghiencuu.html">Nghiên cứu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://lhu.edu.vn/103/Lien-he.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="First">
+        <div class="d">
+            <img src="image/BANNER DAI HOC.jpg" alt="Mô tả ảnh" width="" height="">
+        </div>
+        <div class="Seconds">
+            <h1> Đại học </h1>
+            <div class="deu">
+
+                <p> <i class="fa fa-gift" aria-hidden="true"></i> 1800 học bổng, trị giá 22 tỷ.</p>
+                <p> <i class="fa fa-check" aria-hidden="true"></i> Miễn phí 3 tháng ký túc xá cho thí sinh nhập học sớm
+                </p>
+                <p> <i class="fa fa-credit-card"></i> Miễn phí vé xe nhập học cho thí sinh nhập học sớm </p>
+                <p> <i class="fa fa-plane"></i> Tặng gói luyện nói chuẩn tiếng anh 1 năm, trị giá 5 Tỷ.</p>
+                <p> <i class="fa fa-bars"></i> Chương trình đào tạo tiếng nhật</p>
+            </div>
+            <div class="two">
+                <div class="top-row">
+                    <a href="https://sinhvientuonglai.lhu.edu.vn" target="_self" rel="noopener">Tuyển sinh 2024</a>
+                    <a href="https://xettuyen.lhu.edu.vn/?src=wstuyensinh&" target="_self" rel="noopener">Đăng ký xét
+                        tuyển</a>
+                </div>
+                <a href="https://xettuyen.lhu.edu.vn/?src=wstuyensinh&" target="_self" rel="noopener"
+                    class="full-width">Đăng ký xét tuyển chương trình Việt - Nhật</a>
+            </div>
+        </div>
+    </div>
+    <div class="three">
+        <div class="De1">
+            <a href="https://tuyensinh.lhu.edu.vn/640/47056/Truong-Dai-hoc-Lac-Hong-cong-bo-de-an-tuyen-sinh-nam-2024.html"
+                target="_self" rel="noopener">
+                <img src="image/de111.PNG" alt="Mô tả ảnh" width="" height="">
+            </a>
+            <br>
+            <a href="https://tuyensinh.lhu.edu.vn/640/47056/Truong-Dai-hoc-Lac-Hong-cong-bo-de-an-tuyen-sinh-nam-2024.html"
+                target="_self" rel="noopener">Trường Đại Học Lạc Hồng công bố đề án tuyển sinh năm 2024</a>
+        </div>
+
+        <div class="De2">
+            <a href="https://tuyensinh.lhu.edu.vn/640/46798/Thong-bao-xet-tuyen-bo-sung-Dai-hoc-chinh-quy-nam-2024.html"
+                target="_self" rel="noopener ">
+                <img src="image/de2.PNG" alt="Mô tả ảnh" width="" height="">
+            </a>
+            <br>
+            <a href="https://tuyensinh.lhu.edu.vn/640/46798/Thong-bao-xet-tuyen-bo-sung-Dai-hoc-chinh-quy-nam-2024.html"
+                target="_self" rel="noopener ">Thông báo xét tuyển bổ sung Đại Học chính quy năm 2024</a>
+        </div>
+        <div class="De3">
+            <a href="https://tuyensinh.lhu.edu.vn/640/46714/LHU-Huong-dan-thu-tuc-xac-nhan-va-nhap-hoc-dai-hoc-chinh-quy-nam-2024.html"
+                target="_self" rel="noopener ">
+                <img src="image/de3.PNG" alt="Mô tả ảnh" width="" height="">
+            </a>
+            <br>
+            <a href="https://tuyensinh.lhu.edu.vn/640/46714/LHU-Huong-dan-thu-tuc-xac-nhan-va-nhap-hoc-dai-hoc-chinh-quy-nam-2024.html"
+                target="_self" rel="noopener ">LHU-Hướng dẫn thủ tục xác nhận và nhập học đại học chính quy năm 2024</a>
+        </div>
+    </div>
+
+    <div class="Four">
+        <div class="Noidung">
+            <div class="text">
+                <h1> LIÊN THÔNG </h1>
+                <h2> <i class="fa fa-check" aria-hidden="true"></i> ĐỐI TƯỢNG</h2>
+                <p> Đã tốt nghiệp trung cấp chuyên nghiệp; cao đẳng chuyên nghiệp; đại học</p>
+                <h2> <i class="fa fa-check" aria-hidden="true"></i> HÌNH THỨC TUYỂN SINH</h2>
+                <p> - Xét tuyển theo bảng điểm kết quả học tập hệ trung cấp, cao đẳng đối với hệ liên thông; Xét tuyển
+                    thẳng
+                    đối tượng đã tốt nghiệp đại học đối với hệ Đại học văn bằng 2.</p>
+                <p> - Ngành Dược thi tuyển theo đề thi riêng của Trường Đại học Lạc Hồng. </p>
+            </div>
+            <div class="Five">
+                <div class="Top-five">
+                    <a class="jjj" href="https://lienthong.lhu.edu.vn" target="_self" rel="noopener ">TUYỂN SINH
+                        2024</a>
+                    <a href="https://xettuyen.lhu.edu.vn/?src=wstuyensinh&" target="_self" rel="noopener ">ĐĂNG KÝ XÉT
+                        TUYỂN</a>
+                </div>
+            </div>
+        </div>
+        <div class="Lienthong">
+            <img src="image/BANNER LIEN THONG.jpg" alt="Mô tả ảnh" width="" height="">
+        </div>
+
+    </div>
+    <div class="six">
+        <div class="So1">
+            <a href="https://tuyensinh.lhu.edu.vn/646/46793/Thong-bao-tuyen-sinh-he-lien-thong-dai-hoc-nganh-Duoc-Dot-2-nam-2024.html"
+                target="_self" rel="noopener "> <img src="image/de6.PNG" alt="Mô tả ảnh" width="" height=""></a>
+            <br>
+            <a href="https://tuyensinh.lhu.edu.vn/646/46793/Thong-bao-tuyen-sinh-he-lien-thong-dai-hoc-nganh-Duoc-Dot-2-nam-2024.html"
+                target="_self" rel="noopener ">Thông báo tuyển sinh hệ liên thông đại học ngành Dược - Đợt 2 năm
+                2024</a>
+        </div>
+        <div class="So2">
+            <a href="https://tuyensinh.lhu.edu.vn/646/46792/Thong-bao-tuyen-sinh-he-lien-thong-dai-hoc-van-bang-2-chinh-quy-Dot-2-nam-2024.html"
+                target="_self" rel="noopener "> <img src="image/de7.PNG" alt="Mô tả ảnh" width="" height=""></a>
+            <br>
+            <a href="https://tuyensinh.lhu.edu.vn/646/46792/Thong-bao-tuyen-sinh-he-lien-thong-dai-hoc-van-bang-2-chinh-quy-Dot-2-nam-2024.html"
+                target="_self" rel="noopener ">Thông báo tuyển sinh hệ liên thông, đại học văn bằng 2 chính quy - Đợt 2
+                năm 2024</a>
+        </div>
+        <div class="So3">
+            <a href="https://tuyensinh.lhu.edu.vn/646/46551/Thong-bao-Tuyen-sinh-he-lien-thong-dai-hoc-van-bang-2-chinh-quy-Dot-1-nam-hoc-2024-2025.html"
+                target="_self" rel="noopener "> <img src="image/de8.PNG" alt="Mô tả ảnh" width="" height=""></a>
+            <br>
+            <a href="https://tuyensinh.lhu.edu.vn/646/46551/Thong-bao-Tuyen-sinh-he-lien-thong-dai-hoc-van-bang-2-chinh-quy-Dot-1-nam-hoc-2024-2025.html"
+                target="_self" rel="noopener ">Thông báo Tuyển sinh hệ liên thông, đại học văn bằng 2 chính quy - Đợt 1
+                năm
+                học 2024 - 2025</a>
+        </div>
+        <div class="So4">
+
+            <a href="https://tuyensinh.lhu.edu.vn/646/45573/Thong-bao-Tuyen-sinh-he-lien-thong-dai-hoc-van-bang-2-chinh-quy-Dot-2-nam-hoc-2023-2024.html"
+                target="_self" rel="noopener "> <img src="image/de9.PNG" alt="Mô tả ảnh" width="" height=""></a>
+            <br>
+            <a href="https://tuyensinh.lhu.edu.vn/646/45573/Thong-bao-Tuyen-sinh-he-lien-thong-dai-hoc-van-bang-2-chinh-quy-Dot-2-nam-hoc-2023-2024.html"
+                target="_self" rel="noopener ">Thông báo Tuyển sinh hệ liên thông, đại học văn bằng 2 chính quy - Đợt 2
+                năm
+                học 2023 - 2024</a>
+        </div>
+    </div>
+    <div class="tiensi">
+        <div class="si">
+            <img src="image//BANNER TIEN SI.jpg" alt="Mô tả ảnh" width="" height="">
+        </div>
+        <div class="gomtiensi">
+
+            <DIV class="Server">
+                <h1> TIẾN SĨ</h1>
+
+                <div class="tow-fi">
+
+                    <a href="https://saudaihoc.lhu.edu.vn/541/Tien-Si.html" target="_self" rel="noopener ">KHOA HỌC
+                        MÁY
+                        TÍNH</a>
+
+                    <a href="https://saudaihoc.lhu.edu.vn/541/Tien-Si.html" target="_self" rel="noopener ">QUẢN TRỊ
+                        KINH
+                        DOANH</a>
+                </div>
+                <a class="saudaihoc" href="https://saudaihoc.lhu.edu.vn" target="_self" rel="noopener ">TUYỂN SINH
+                    SAU
+                    ĐẠI
+                    HỌC</a>
+
+            </DIV>
+            <div class="night">
+                <a href="https://tuyensinh.lhu.edu.vn/364/46794/Thong-bao-tuyen-sinh-trinh-do-Tien-si-Dot-4-nam-2024.html"
+                    target="_self" rel="noopener "> <i class="fa fa-angle-right" aria-hidden="true"></i> Thông báo tuyển
+                    sinh trình độ Tiến sĩ - Đợt 4 năm 2024</a>
+                <br />
+                <a href="https://tuyensinh.lhu.edu.vn/364/45881/Thong-bao-Tuyen-sinh-trinh-do-Tien-si-dot-3-nam-2024.html"
+                    target="_self" rel="noopener "> <i class="fa fa-angle-right" aria-hidden="true"></i> Thông báo Tuyển
+                    sinh trình độ Tiến sĩ đợt 3 năm 2024</a>
+                <br />
+                <a href="https://tuyensinh.lhu.edu.vn/364/45052/Thong-bao-tuyen-sinh-trinh-do-tien-si-dot-2-nam-2024.html"
+                    target="_self" rel="noopener "><i class="fa fa-angle-right" aria-hidden="true"></i> Thông báo tuyển
+                    sinh trình độ Tiến sĩ đợt 2 năm 2024</a>
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="ten">
+        <div class="nganh">
+            <h1> THẠC SĨ</h1>
+            <div class="item">
+
+                <a href="https://saudaihoc.lhu.edu.vn/482/Thac-Si.html" target="_self" rel="noopener ">TỔ CHỨC QUẢN LÝ
+                    DƯỢC</a>
+
+                <a href="https://saudaihoc.lhu.edu.vn/482/Thac-Si.html" target="_self" rel="noopener ">KẾ TOÁN</a>
+                <a href="https://saudaihoc.lhu.edu.vn/482/Thac-Si.html" target="_self" rel="noopener ">KỸ THUẬT XÂY
+                    DỰNG</a>
+                <a href="https://saudaihoc.lhu.edu.vn/482/Thac-Si.html" target="_self" rel="noopener ">QUẢN TRỊ KINH
+                    DOANH</a>
+
+                <a href="https://saudaihoc.lhu.edu.vn/482/Thac-Si.html" target="_self" rel="noopener ">NGÔN NGỮ ANH</a>
+                <a href="https://saudaihoc.lhu.edu.vn/482/Thac-Si.html" target="_self" rel="noopener ">KỸ THUẬT ĐIỆN
+                </a>
+                <a href="https://saudaihoc.lhu.edu.vn/482/Thac-Si.html" target="_self" rel="noopener ">CÔNG NGHỆ THÔNH
+                    TIN</a>
+                <a href="https://saudaihoc.lhu.edu.vn/482/Thac-Si.html" target="_self" rel="noopener ">TÀI CHÍNH NGÂN
+                    HÀNG</a>
+            </div>
+            <div class="last">
+                <a href="https://saudaihoc.lhu.edu.vn" target="_self" rel="noopener ">TUYỂN SINH SAU ĐẠI HỌC 2024</a>
+            </div>
+        </div>
+        <div class="vuvivuvi">
+            <img src="image/BANNER THAC SI.jpg" alt="Mô tả ảnh" width="" height="">
+        </div>
+    </div>
+    </div>
+    <DIV class="sinhsinh">
+        <div class="tb1">
+            <a href="https://tuyensinh.lhu.edu.vn/425/46698/Thong-bao-Tuyen-sinh-Thac-si-dot-4-nam-2024.htmll"
+                target="_self" rel="noopener "> <img src="image/de11.PNG" alt="Mô tả ảnh" width="" height=""></a>
+            <br />
+            <a href="https://tuyensinh.lhu.edu.vn/425/46698/Thong-bao-Tuyen-sinh-Thac-si-dot-4-nam-2024.htmll"
+                target="_self" rel="noopener ">Thông báo Tuyển sinh Thạc sĩ đợt 4 năm 2024</a>
+        </div>
+        <div class="tb2">
+            <a href="https://tuyensinh.lhu.edu.vn/425/46698/Thong-bao-Tuyen-sinh-Thac-si-dot-4-nam-2024.htmll"
+                target="_self" rel="noopener "> <img src="image/de12.PNG" alt="Mô tả ảnh" width="" height=""></a>
+            <br />
+            <a href="https://tuyensinh.lhu.edu.vn/425/45972/Thong-bao-Tuyen-sinh-Thac-si-dot-3-nam-2024.html"
+                target="_self" rel="noopener ">Thông báo Tuyển sinh Thạc sĩ đợt 3 năm 2024</a>
+        </div>
+        <div class="tb3">
+            <a href="https://tuyensinh.lhu.edu.vn/425/46698/Thong-bao-Tuyen-sinh-Thac-si-dot-4-nam-2024.htmll"
+                target="_self" rel="noopener "> <img src="image/de13.PNG" alt="Mô tả ảnh" width="" height=""></a>
+            <br />
+            <a href="https://tuyensinh.lhu.edu.vn/425/45050/Thong-bao-Tuyen-sinh-Thac-si-dot-2-nam-2024.html"
+                target="_self" rel="noopener ">Thông báo Tuyển sinh Thạc sĩ đợt 2 năm 2024</a>
+        </div>
+        <div class="tb4">
+            <a href="https://tuyensinh.lhu.edu.vn/425/46698/Thong-bao-Tuyen-sinh-Thac-si-dot-4-nam-2024.htmll"
+                target="_self" rel="noopener "> <img src="image/de14.PNG" alt="Mô tả ảnh" width="" height=""></a>
+            <br />
+            <a href="https://tuyensinh.lhu.edu.vn/425/44788/Thong-bao-Tuyen-sinh-Thac-si-dot-1-nam-2024.html"
+                target="_self" rel="noopener "> Thông báo Tuyển sinh Thạc sĩ đợt 1 năm 2024</a>
+        </div>
+    </DIV>
+    <div class="chuyenkhoa">
+        <div class="k">
+            <img src="image/BANNER CHUYEN KHOA.jpg" alt="Mô tả ảnh" width="" height="">
+        </div>
+        <div class="hoa">
+            <div class="hh">
+                <h1> CHUYÊN KHOA 1 </h1>
+                <div class="Khoa">
+                    <a href="" target="_self" rel="noopener ">TỔ CHỨC & QUẢN LÝ DƯỢC</a>
+                    <a href="" target="_self" rel="noopener ">DƯỢC LÝ VÀ DƯỢC LÂM SÀNG</a>
+                </div>
+                <DIV class="chuyen">
+
+                    <a href="https://tuyensinh.lhu.edu.vn/683/46795/Thong-bao-tuyen-sinh-Chuyen-khoa-1-dot-3-nam-2024.html"
+                        target="_self" rel="noopener "> <i class="fa fa-angle-right" aria-hidden="true"></i> Thông báo
+                        tuyển sinh chuyên khoa 1 đợt 3 năm 2024</a>
+                    <br />
+                    <a href="https://tuyensinh.lhu.edu.vn/683/45882/Thong-bao-tuyen-sinh-Chuyen-khoa-1-dot-2-nam-2024.html"
+                        target="_self" rel="noopener "> <i class="fa fa-angle-right" aria-hidden="true"></i> Thông báo
+                        tuyển sinh chuyên khoa 1 đợt 2 năm 2024</a>
+                    <br />
+                    <a href="https://tuyensinh.lhu.edu.vn/683/44692/Thong-bao-tuyen-sinh-chuyen-khoa-1-dot-1-nam-2024.html"
+                        target="_self" rel="noopener "> <i class="fa fa-angle-right" aria-hidden="true"></i> Thông báo
+                        tuyển sinh chuyên khoa 1 đợt 1 năm 2024</a>
+                    <br />
+                    <a href="https://tuyensinh.lhu.edu.vn/683/44399/Thong-bao-tuyen-sinh-chuyen-khoa-1-dot-3-nam-2023.html"
+                        target="_self" rel="noopener "> <i class="fa fa-angle-right" aria-hidden="true"></i> Thông báo
+                        tuyển sinh chuyên khoa 1 đợt 3 năm 2023</a>
+                    <br />
+                </DIV>
+            </div>
+        </div>
+    </div>
+    <div class="lienhe">
+        <a href="" target="_self" rel="noopener ">(0251) 73000 73</a>
+        <a href="https://tuyensinh.lhu.edu.vn" target="_self" rel="noopener ">tuyensinh@lhu.edu.vn</a>
+        <a href="https://lhu.edu.vn" target="_self" rel="noopener ">lhu.edu.vn</a>
+        <a href="https://www.facebook.com/lhuniversity/?locale=vi_VN" target="_self"
+            rel="noopener ">fb.com/lhuniversity</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid pb-5">
+        <div class="ketnoi row">
+            <div class="col-lg-2 text-uppercase">Kết Nối</div>
+            <div class="col-lg-10 icon">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/lhuniversity"><i
+                                class="fa-brands fa-square-facebook fa-bounce " style="color: #406dba;"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@lhuniversity"><i class="fa-brands fa-youtube fa-bounce "
+                                style="color: red;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="Menukhoa row">
+            <li class="col-md col-sm-6">
+                <ul class="khoa1">
+                    <li>
+                        <a href="https://saudaihoc.lhu.edu.vn/">Khoa Sau đại học</a>
+                    </li>
+                    <li>
+                        <a href="https://duoc.lhu.edu.vn/">Khoa Dược</a>
+                    </li>
+                    <li>
+                        <a href="https://cs.lhu.edu.vn/">Khoa Công nghệ Thông tin</a>
+                    </li>
+                    <li>
+                        <a href="https://codien.lhu.edu.vn/">Khoa Cơ điện - Điện tử</a>
+                    </li>
+                    <li>
+                        <a href="https://kc.lhu.edu.vn/">Khoa Kỹ thuật Công trình</a>
+                    </li>
+                    <li>
+                        <a href="https://cee.lhu.edu.vn/">Khoa Khoa học và Công nghệ thực phẩm</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-md col-sm-6">
+                <ul class="khoa1">
+                    <li>
+                        <a href="https://qt.lhu.edu.vn/">Khoa Quản trị - Kinh tế Quốc tế</a>
+                    </li>
+                    <li>
+                        <a href="https://tckt.lhu.edu.vn/">Khoa Tài chính Kế toán</a>
+                    </li>
+                    <li>
+                        <a href="https://ed.lhu.edu.vn/">Khoa Ngôn ngữ Anh</a>
+                    </li>
+                    <li>
+                        <a href="https://dp.lhu.edu.vn/">Khoa Đông phương học</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-md col-sm-6">
+                <ul class="khoa1">
+                    <li>
+                        <a href="https://dangbo.lhu.edu.vn/">Đảng bộ</a>
+                    </li>
+                    <li>
+                        <a href="https://doanhoi.lhu.edu.vn/">Đoàn TN - Hội SV</a>
+                    </li>
+                    <li>
+                        <a href="https://congdoan.lhu.edu.vn/">Công đoàn cơ sở</a>
+                    </li>
+                    <li>
+                        <a href="https://dambaochatluong.lhu.edu.vn/">Đảm bảo chất lượng</a>
+                    </li>
+                    <li>
+                        <a href="https://hoptac.lhu.edu.vn/">Hợp tác đối ngoại</a>
+                    </li>
+                    <li>
+                        <a href="https://hdgscs.lhu.edu.vn/">Hội đồng giáo sư cơ sở</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-md col-sm-6">
+                <ul class="khoa1">
+                    <li>
+                        <a href="https://swpea2023.lhu.edu.vn/">Hội nghị SWPEA2023</a>
+                    </li>
+                    <li>
+                        <a href="https://25nam.lhu.edu.vn/">Kỷ yếu 25 năm thành lập</a>
+                    </li>
+                    <li>
+                        <a href="https://tainguyen.lhu.edu.vn/">Tài nguyên học tập</a>
+                    </li>
+                    <li>
+                        <a href="https://lhu.edu.vn/319/Tuyen-dung.html">Tuyển dụng</a>
+                    </li>
+                    <li>
+                        <a href="https://phongchongcovid19.lhu.edu.vn/">Phòng chống COVID-19</a>
+                    </li>
+                    <li>
+                        <a href="https://netdepsinhvienlachong2024.lhu.edu.vn/">Nét đẹp sinh viên 2024</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="row" style="background-color: #284F9E;">
+        <div class="container-fluid">
+            <div class="Footer row">
+                <div class="col-lg-2">
+                    <a href="https://lhu.edu.vn/40/Gioi-thieu.html">
+                        <img src="image/Logo_white_Vi.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="col-md diachi" style="color:#fff;">
+                        <ul>
+                            <li>
+                                Địa chỉ: Số 10, Huỳnh Văn Nghệ, P. Bửu Long, Tp. Biên Hòa - Tỉnh Đồng Nai
+                            </li>
+                            <li>
+                                Điện thoại:
+                                <a href="https://lhu.edu.vn/24/tel:02513%20952%20778"
+                                    style="color:#fff;font-weight:300;">0251 3952 778</a>
+                            </li>
+                            <li>
+                                Email:
+                                <a href="mailto:lachong@lhu.edu.vn"
+                                    style="color:#fff;font-weight:300;">lachong@lhu.edu.vn</a>
+                            </li>
+                            <li>© 2023 Đại học Lạc Hồng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="col-md chitiet" style="color: #fff;">
+                        <i class="fa fa-folder-open"></i> 655,315
+                        <i class="fa fa-chart-column"></i> 1/792
+                        <div class="d-flex flex-column align-items-center justify-content-center logo-truong">
+                            <img src="/image/Me_80.png" alt="me">
+                            <div class="me-app">
+                                <a href="https://apps.apple.com/us/app/me-app/id1278107318?l=vi">
+                                    <img src="image/download-on-the-app-store.svg" alt="gg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            if (menu.style.display === 'contents') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'contents';
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
