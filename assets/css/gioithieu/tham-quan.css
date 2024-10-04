@@ -1,0 +1,51 @@
+.tham-quan .section-title {
+    font-size: 2em;
+    color: #0277bd;
+    /* text-align: center; */
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.tham-quan {
+    margin: 50px 0;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.tham-quan .row {
+    margin-top: 50px;
+}
+
+.tham-quan a {
+    text-decoration: none;
+}
+
+.tham-quan .menu {
+    margin-bottom: 20px;
+    background-color: rgba(19, 82, 162, 1);
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: white;
+}
+
+.tham-quan .menu h2 {
+    font-size: 23px;
+    text-align: left;
+}
+
+.tham-quan .menu p {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.bang-cap .btn {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.bang-cap .btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
