@@ -1,5 +1,5 @@
 body {
-    padding: 15px;
+    padding: 1px;
     margin: 0;
     font-family: Arial, sans-serif;
     width: 100%;
@@ -153,6 +153,10 @@ body {
     color: white;
     font-size: 14px;
     width: 100%;
+    position: sticky;
+    transition: all 0.3s;
+    top: 0;
+    z-index: 1000;
 }
 
 .header-left {
@@ -183,14 +187,7 @@ body {
 }
 
 .header-left ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s ease-in-out;
+   
 }
 
 .header-left ul li a:hover::after {
@@ -338,7 +335,16 @@ img {
     justify-content: space-between;
     align-items: flex-start;
 }
+.three a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #000000;
+}
 
+.three a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
 .De1,
 .De2,
 .De3 {
@@ -475,6 +481,16 @@ img {
     height: auto;
 }
 
+.six a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.six a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
 .six a {
     color: black;
     text-decoration: none;
@@ -555,6 +571,49 @@ img {
     padding-left: 20px;
 }
 
+.night a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #284F9E;
+}
+
+ .last a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+ .last a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+.item a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+ .item a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.night a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sinhsinh a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.sinhsinh a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
 .ten {
     display: flex;
     gap: 30px;
@@ -691,12 +750,24 @@ li {
     margin-top: 15px;
     padding-left: 20px;
 
+} 
+.chuyen a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #284F9E;
+}
+
+ .chuyen a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .Khoa {
     color: #fff !important;
     display: flex;
     gap: 15px;
+    padding-top: 20px !important;
+    
 }
 
 .Khoa a {
@@ -706,12 +777,32 @@ li {
     gap: 10px;
     padding: 15px 20px;
     background-color: #284F9E;
-
+    
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 
     text-align: center;
+}
+.Khoa a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+ .Khoa a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+.Server a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+ .Server a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .lienhe {
@@ -719,7 +810,19 @@ li {
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
+    margin-top: 10px;
+    color: #284F9E;
 
+}
+.lienhe a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color: #284F9E;
+}
+
+ .lienhe a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .text,
@@ -1021,7 +1124,7 @@ p {
     }
 
     .Menukhoa ul li {
-        margin-left: 0px;
+        margin-left: -40px;
         /*cần chỉnh sửa */
     }
 
