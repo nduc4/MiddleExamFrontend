@@ -136,6 +136,7 @@
         list-style: none;
         flex-direction: column;
         color: black;
+        padding-left: 2rem;
     }
 
     .menu li {
