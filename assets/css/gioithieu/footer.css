@@ -1,0 +1,153 @@
+/* footer */
+.ketnoi {
+    text-align: left;
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+    color: #284F9E;
+    font-weight: 600;
+}
+
+.fasquare-facebookfa-bounce::before {
+    font-weight: 900;
+    content: "\f082";
+    font-family: "\f082";
+}
+
+.icon li {
+    text-align: left;
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.col-lg-2 {
+    padding-top: 25px;
+}
+
+/* 1200 / 1024 / 992 / 768 / 576 / 400 / 320  */
+.Menukhoa ul li {
+    /*cần chỉnh sửa */
+    margin-left: 0px;
+}
+
+.Footer img {
+    height: 130px;
+    margin: 15px 15px 10px 10px;
+    /*cần chỉnh sửa */
+}
+
+.tiensi img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 2rem;
+}
+
+.anh img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    margin-left: -50px;
+}
+
+.chitiet {
+    padding-top: 20px;
+    /*cần chỉnh sửa */
+}
+
+.diachi {
+    padding-top: 50px;
+    /*cần chỉnh sửa */
+}
+
+.logo-truong img {
+    /*cần chỉnh sửa */
+    gap: 15px;
+    margin-top: 25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    margin-left: -50px;
+}
+
+.me-app img {
+    /*cần chỉnh sửa */
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    margin-left: -50px;
+}
+
+/* responsive */
+/* footer */
+.ketnoi {
+    text-align: left;
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+    color: #284F9E;
+    font-weight: 600;
+}
+
+.fasquare-facebookfa-bounce::before {
+    font-weight: 900;
+    content: "\f082";
+    font-family: "\f082";
+}
+
+.icon li {
+    text-align: left;
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* 1200 / 1024 / 992 / 768 / 576 / 400 / 320  */
+
+.Menukhoa ul li {
+    margin-left: -60px;
+}
+
+.Footer img {
+    height: 130px;
+    margin: 15px 15px 10px 15px;
+}
+
+.chitiet {
+    padding-top: 20px;
+}
+
+.logo-truong img {
+    gap: 15px;
+    margin-top: 25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    margin-left: -50px;
+}
+
+.me-app img {
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    margin-left: -50px;
+}
+
+.diachi {
+    margin-left: 0px;
+    /*cần chỉnh sửa */
+}
+
+.Menukhoa ul li {
+    margin-left: 0px;
+    /*cần chỉnh sửa */
+}
+
+.footer-long ul,li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

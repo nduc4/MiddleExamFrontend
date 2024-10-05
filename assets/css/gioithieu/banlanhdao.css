@@ -1,0 +1,35 @@
+.ban-lanh-dao .title {
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 400;
+    color: #0277bd;
+    text-transform: uppercase;
+}
+
+.ban-lanh-dao .row .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.ban-lanh-dao .row .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ban-lanh-dao .row .card a {
+    text-decoration: none;
+}
+
+.ban-lanh-dao .row .card .card-title {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+@media (max-width: 768px) {
+    
+    .ban-lanh-dao .row {
+        align-items: center;
+        display: contents;
+    }
+}

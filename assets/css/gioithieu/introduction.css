@@ -1,0 +1,12 @@
+.introduction {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.introduction #text {
+    background-color: #f2f1eb;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 15px;
+}

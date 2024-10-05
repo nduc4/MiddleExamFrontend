@@ -1,0 +1,42 @@
+.bang-cap .section-title {
+    font-size: 2em;
+    color: #0277bd;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.bang-cap ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.bang-cap .row a {
+    text-transform: uppercase;
+    color: #4285f4;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bang-cap .container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bang-cap .btn {
+    /* margin-bottom: 30px; */
+    padding: 1em 0;
+    background-color: transparent !important;
+    border: 3px solid #4285f4;
+    color: #4285f4 !important
+}
+
+.bang-cap .btn-rounded {
+    border-radius: 10px;
+}
+
+.bang-cap li {
+    margin-bottom: 30px;
+}

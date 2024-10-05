@@ -1,0 +1,22 @@
+.tong-quan ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.tong-quan .row a {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tong-quan .container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tong-quan .btn {
+    margin-bottom: 30px;
+    padding: 1em 0;
+}
